@@ -7,7 +7,7 @@ class App extends Component {
 
   async componentDidMount() {
     try {
-      const res = await fetch("http://django-env.eba-gzukpxeu.us-west-2.elasticbeanstalk.com/api/"); // fetching the data from api, before the page loaded
+      const res = await fetch("https://www.nyuprep.com/api/"); // fetching the data from api, before the page loaded
       const todos = await res.json();
       this.setState({
         todos,
